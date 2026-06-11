@@ -3,13 +3,17 @@ description: "파이썬 오답 노트와 개발 공부 기록"
 baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" 
+minimal_mistakes_skin: "dark"
+
 plugins:
   - jekyll-include-cache
+
+search: true
+
 author:
-  name   : "성진 (Sungjin)"
-  avatar : "https://turbulentflux.com/wp-content/uploads/2020/09/20200831_Data_Information_Knowledge.png"
-  bio    : "매일 코딩하는 꿈을 꾸는 청년"
+  name: "성진 (Sungjin)"
+  avatar: "https://turbulentflux.com/wp-content/uploads/2020/09/20200831_Data_Information_Knowledge.png" 
+  bio: "매일 코딩하는 꿈을 꾸는 청년"
   location: "South Korea"
   links:
     - label: "GitHub"
@@ -18,7 +22,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:tjdwlsl8888@gmail.com"
-
 
 navigation:
   search: true 
