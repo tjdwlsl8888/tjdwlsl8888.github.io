@@ -54,9 +54,9 @@ a:hover {text-decoration: underline;}
 
 주의할 점은 선택자마다 쓰는 방법이 다르다는 거다. 
 
-```
+
 <span class="highlight-dark">1. 태그 (Tag Selector)</span> 
-```
+
 
 작성법: 그냥 순수하게 본인만 입력하면 된다.    ex. p, div, h1, span 등 
 
