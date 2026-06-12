@@ -35,10 +35,12 @@ ex. width, border, position
 ex. relative, 100px, solid
 
 <br>
-보통 css작업을 할 때면 html 본문에 작업할 <body> 뼈대 위에
+보통 css작업을 할 때면 html 본문에 작업할 body태그 뼈대 위에
 <br>
 
-```<link href="css파일경로" rel="stylesheet">```  
+```
+<link href="css파일경로" rel="stylesheet">
+```  
 <br>
 이런식으로 외부 파일에서 깔끔하게 정리해서 적용시키는 방식을 주로 하게 된다. (external방식)
 
@@ -84,9 +86,15 @@ color: red;
 보통 html 본문에 있는 태그 안에 class="명칭" 을 부과해서 쉽게 지정할 수 있게 작업한다
 <div class="blank-space"></div>
 
-```<div class="head">```  -> 이러면 아하 머리부분 블록을 작업하는구나 판단할 수 있다. 
+```
+<div class="head">  
+``` 
+-> 이러면 아하 머리부분 블록을 작업하는구나 판단할 수 있다.
   
-```<div class="body">```    -> 여기는 몸통 부분이네하고 직관적으로 구분하기 쉽게 명칭을 넣어주는게 좋다. 
+```
+<div class="body">
+```
+-> 여기는 몸통 부분이네하고 직관적으로 구분하기 쉽게 명칭을 넣어주는게 좋다. 
   <div class="blank-space"></div>
   그래야 나중에 css작업하기 편하기도 하고 본문 구조를 파악하기 편하다. 물론 구조를 미리 잡고 작업하는게 베스트.
  <div class="blank-space"></div>
