@@ -29,3 +29,10 @@
 .blank-space {
   height: 40px; 
 }
+
+/* --- 코드 블록(```) 디자인 커스텀 --- */
+.highlight pre {
+  font-size: 16px !important; 
+  padding: 20px 25px !important; 
+  line-height: 1.6 !important; 
+}
