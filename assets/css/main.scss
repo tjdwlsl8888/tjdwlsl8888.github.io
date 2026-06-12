@@ -1,3 +1,9 @@
+---
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
 /* 다크모드에 어울리는 오답 노트 박스 */
 .my-wrong-note {
   background-color: #2d3748; /* 배경보다 살짝 밝은 짙은 회색 */
