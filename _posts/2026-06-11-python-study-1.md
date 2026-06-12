@@ -1,5 +1,5 @@
 ---
-title: "파이썬 첫 오답노트: List와 Tuple의 차이"
+title: "Python Methods, Functions"
 categories:
   - Python
 tags:
@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-    for idx, value in enumerate(list):
+   for idx, value in enumerate(list):
    idx, value 이 순서로 나옴. tuple형식
 
     insert(자리번호 idx, 넣을_데이터 value)
