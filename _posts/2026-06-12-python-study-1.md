@@ -1,5 +1,5 @@
 ---
-title: "Python Position에 대해서(relative vs absolute)"
+title: "CSS 기초. 선택자와 그 사용법"
 categories:
   - Python
 tags:
