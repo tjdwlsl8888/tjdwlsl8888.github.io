@@ -31,10 +31,12 @@
 }
 
 /* --- 코드 블록(```) 디자인 커스텀 --- */
-.highlight pre {
+.highlight, .highlight pre {
   font-size: 16px !important; 
   padding: 20px 25px !important; 
   line-height: 1.6 !important; 
+  width: fit-content !important; /* 핵심 추가! 내용물 크기만큼만 상자가 줄어듭니다 */
+  min-width: 400px !important;   /* 옵션: 너무 짧은 단어를 넣었을 때 박스가 콩알만해지는 걸 방지하는 최소 너비 */
 }
 
 /* --- 블로그 본문 및 메인 화면 좌우 숨통 틔우기 --- */
