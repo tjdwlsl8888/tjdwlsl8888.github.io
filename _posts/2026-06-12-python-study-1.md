@@ -108,6 +108,12 @@ h1 {
 <span class="highlight-dark">2. 클래스 선택자 (Class Selector) ⭐</span> 
 <br><br>
 
+```css
+.class_name {
+    color: blue;
+}
+```
+
 작성법: .을 치고 그 클래스명을 입력해서 작업한다. 
 
 보통 html 본문에 있는 태그 안에 `class="명칭"` 을 부과해서 쉽게 지정할 수 있게 작업한다.
@@ -124,12 +130,7 @@ h1 {
 <div class="blank-space"></div>
 그래야 나중에 css작업하기 편하기도 하고 본문 구조를 파악하기 편하다. 물론 구조를 미리 잡고 작업하는게 베스트.
 <div class="blank-space"></div>
-```css
-.div_class_name01 {
-    color: blue;
-}
-```
-<div class="blank-space"></div>
+
 <span class="highlight-dark">3. 아이디 선택자 (ID Selector)</span> 
 <br><br>
 
