@@ -24,13 +24,13 @@ toc_sticky: true
 <div class="blank-space"></div>
 프로그래밍 언어를 공부하다보면 굉장히 친숙한 '딕셔너리(json)' 형태의 구조이다. 
 <br><br>
-여기서, **선택자**란 디자인 속성을 적용할 대상이고   
+&emsp;여기서, **선택자**란 디자인 속성을 적용할 대상이고   
 <br>
-**속성**은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
-*ex. width, border, position*
+&emsp;**속성**은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
+&emsp;*ex. width, border, position*
 <br><br>
-**값 (Value)**은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
-*ex. relative, 100px, solid*
+&emsp;**값 (Value)**은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
+&emsp;*ex. relative, 100px, solid*
 <br><br>
 보통 css작업을 할 때면 html 본문에 작업할 body태그 뼈대 위에
 <br>
@@ -100,7 +100,7 @@ h1 {
 
 <iframe>, <video>, <canvas>
 -> 이 태그들 자체의 껍데기 크기(width, height)나 테두리(border)는 바꿀 수 있으나 
-   저 태그 안쪽 내용은 우리의 CSS로 절대 건드릴 수 없음 외부 세계와 완벽히 단절
+   저 태그 안쪽 내용은 우리의 CSS로 절대 건드릴 수 없음
 ```
 <div class="blank-space"></div> 
 <span class="highlight-dark">2. 클래스 선택자 (Class Selector) ⭐</span> 
@@ -114,12 +114,12 @@ h1 {
 ```html
 <div class="head">  
 ``` 
--> 이러면 아하 머리부분 블록을 작업하는구나 판단할 수 있다.
+&emsp;-> 이러면 아하 머리부분 블록을 작업하는구나 판단할 수 있다.
   
 ```html
 <div class="body">
 ```
--> 여기는 몸통 부분이네하고 직관적으로 구분하기 쉽게 명칭을 넣어주는게 좋다. 
+&emsp;-> 여기는 몸통 부분이네하고 직관적으로 구분하기 쉽게 명칭을 넣어주는게 좋다. 
 <div class="blank-space"></div>
 그래야 나중에 css작업하기 편하기도 하고 본문 구조를 파악하기 편하다. 물론 구조를 미리 잡고 작업하는게 베스트.
 <div class="blank-space"></div>
@@ -157,6 +157,7 @@ h1 {
 사용법은 간단하다. `#`만 붙여서 맨 앞자리에 쓰면 끝이다.
 
 위의 예시 코드는 뭔가 복잡해보이지만 여기서 중점적으로 봐야할건 `#wrap` 이 부분과 `div.head` 이거다. 
+<br><br>
 여기서 아주 중요한 규칙 하나, 바로 **'띄어쓰기'의 비밀**이다.
 <br><br>
 
@@ -184,7 +185,8 @@ h1 {
 ```html
 <div id="wrap"></div> 
 ```
-이 구역 **안에 있는** ```html
+이 구역 **안에 있는** 
+```html
 <div class="head"></div> 
 ```
 를 저격하는 방식인거다.  
