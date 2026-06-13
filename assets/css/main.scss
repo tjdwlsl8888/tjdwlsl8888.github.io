@@ -3,85 +3,65 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* =======================================================
+   1. 사용자 정의 디자인 (오답 노트, 형광펜, 여백 등)
+   ======================================================= */
 .my-wrong-note {
   background-color: #2d3748;
-  border-left: 5px solid #fc8181; 
+  border-left: 5px solid #fc8181;
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 5px;
-  color: #f7fafc; 
+  color: #f7fafc;
 }
 
-
 .highlight-dark {
-  background-color: #744210; 
-  color: #feebc8; 
+  background-color: #744210;
+  color: #feebc8;
   padding: 2px 5px;
   border-radius: 3px;
 }
 
 .my-box {
   background-color: #2d3748;
-  padding: 24px; 
+  padding: 24px;
 }
-
 
 .blank-space {
-  height: 40px; 
+  height: 40px;
 }
 
-/* --- 코드 블록(```) 디자인 커스텀 --- */
-.highlight, .highlight pre {
-  font-size: 16px !important; 
-  padding: 20px 25px !important; 
-  line-height: 1.6 !important; 
-  width: fit-content !important; /* 핵심 추가! 내용물 크기만큼만 상자가 줄어듭니다 */
-  min-width: 400px !important;   /* 옵션: 너무 짧은 단어를 넣었을 때 박스가 콩알만해지는 걸 방지하는 최소 너비 */
-}
-
-/* --- 블로그 본문 및 메인 화면 좌우 숨통 틔우기 --- */
-
-/* 1. 포스트(글) 내부 좌우 여백 */
+/* =======================================================
+   2. 블로그 본문 및 메인 화면 여백/간격 틔우기
+   ======================================================= */
 .page__inner-wrap {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
 
-/* 2. 메인 화면(Recent Posts) 좌우 여백 */
 .archive {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
 
-/* 3. 보너스: 글자 줄 간격 넓히기 (훨씬 읽기 편해집니다) */
 p, li {
-  line-height: 1.8 !important;
+  line-height: 1.8 !important; /* 글자 줄 간격 넓히기 (가독성 상승) */
 }
 
-/* --- 인라인 코드(단일 백틱) 예쁘게 꾸미기 --- */
-
-/* 1. 블로그 본문 (보통 하얀 배경) 에서의 디자인 */
+/* =======================================================
+   3. 문장 중간 '단어 블록(단일 백틱)' 디자인
+   ======================================================= */
+/* 기본 화면(하얀 배경)에서의 얄쌍한 단어 블록 */
 code {
-  background-color: #f1f3f5 !important; /* 연한 회색 배경 */
-  color: #eb5757 !important; /* 약간 붉은색 글씨로 눈에 띄게 */
+  background-color: #f1f3f5 !important;
+  color: #eb5757 !important;
   padding: 3px 6px !important;
   border-radius: 4px !important;
-  font-family: 'Courier New', monospace !important; /* 타자기 폰트 */
-  font-size: 1.2em !important;
+  font-family: 'Courier New', monospace !important;
+  font-size: 0.9em !important; /* 👈 폭주하던 사이즈를 정상(0.9배)으로 원상복구! */
 }
 
-/* (어두운 배경) 안에서의 디자인 */
+/* 오답 노트(어두운 배경) 안에서의 단어 블록 */
 .my-wrong-note code {
-  background-color: #1a202c !important; /* 오답노트 배경보다 더 어두운 까만색 */
-  color: #fbd38d !important; /* 눈에 확 띄는 부드러운 노란색 */
-}
-
-/* --- 큰 코드 블록 안의 이중 배경색(음영) 제거 --- */
-/* --- 어떤 테마에서도 무조건 큰 코드 박스 이중 배경색 없애는 강력한 코드 --- */
-pre code, 
-div.highlight code, 
-.highlighter-rouge code {
-  background-color: transparent !important;
-  padding: 0 !important; /* 혹시 모를 내부 여백까지 싹 제거 */
-  font-size: 16px !important;
-}
+  background-color: #1a202c !important;
+  color: #f
