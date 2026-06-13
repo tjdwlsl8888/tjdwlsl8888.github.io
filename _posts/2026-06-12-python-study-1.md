@@ -33,7 +33,7 @@ toc_sticky: true
 &emsp;*ex. relative, 100px, solid*
 <br><br>
 보통 css작업을 할 때면 html 본문에 작업할 body태그 뼈대 위에
-<br>
+<br><br>
 
 ```html
 <link href="css파일경로" rel="stylesheet">
@@ -51,14 +51,14 @@ toc_sticky: true
 <br><br>
 따로 CSS파일로 관리하는 것이 분업화하여 작업하기도 편하다. 
 <br><br>
-참고로 인라인(inline) 방식으로 직접 내부 코딩하는 경우 우선순위 1순위로 적용된다. 
+참고로 인라인(inline) 방식으로 직접 내부 코딩하는 경우 우선순위 1순위로 적용된다는 점도 알아두자.
 <div class="blank-space"></div>
 이렇게 외부로 뺀 css파일은 당연히 확장자도 `파일명.css` 이고 보통 `common.css`도 같이 만들어서 진행한다. 
 <br><br>
 common파일은 영문 그대로 공통적으로 적용할 속성들을 미리 세팅해놓는 용도다.
 
 <div class="blank-space"></div>
-주로 common파일에는 
+맛보기로 주로 common파일에는 
 ```css
 * { margin:0; padding:0;}
 
@@ -77,8 +77,8 @@ a:hover {text-decoration: underline;}
 <div class="blank-space"></div>
 <span class="highlight-dark">1. 태그 (Tag Selector)</span> 
 <br><br>
-작성법: 그냥 순수하게 본인만 입력하면 된다.    *ex. p, div, h1, span* 등 
-<div class="blank-space"></div>
+작성법: 그냥 순수하게 본인만 입력하면 된다.   
+<br><br>
 예시: 
 
 ```css
@@ -87,7 +87,7 @@ h1 {
 } 
 ```
 <br>
-<strong>주의할 점</strong>은 `<br>` 같은 태그들은 태생적으로 css로 작업이 불가능하다.
+여기서 <strong>주의할 점</strong>은 `<br>` 같은 태그들은 태생적으로 css로 작업이 불가능하다.
 <br>
 아래 나열된 태그들은 불가능하거나 꼼수를 써서 우회적인 방식으로 효과를 줘야할 수도 있다.
 <br><br>
@@ -102,6 +102,8 @@ h1 {
 -> 이 태그들 자체의 껍데기 크기(width, height)나 테두리(border)는 바꿀 수 있으나 
    저 태그 안쪽 내용은 우리의 CSS로 절대 건드릴 수 없음
 ```
+따로 암기할 필요는 전혀 없다. 어차피 주로 선택받는 태그들은 정해져있다. 
+<br><br>
 <div class="blank-space"></div> 
 <span class="highlight-dark">2. 클래스 선택자 (Class Selector) ⭐</span> 
 <br><br>
