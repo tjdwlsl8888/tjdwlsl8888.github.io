@@ -25,13 +25,13 @@ toc_sticky: true
 <div class="blank-space"></div>
 프로그래밍 언어를 공부하다보면 굉장히 친숙한 딕셔너리(json) 형태의 구조이다. 
 
-여기서, 선택자 (Selector)란 디자인 속성을 적용할 대상이고   
+여기서, <strong>선택자</strong>란 디자인 속성을 적용할 대상이고   
 
-속성 (Property)은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
+<strong>속성</strong>은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
 
-ex. width, border, position
+<em>ex. width, border, position</em>
 
-값 (Value)은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
+<strong>값</strong> (Value)은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
 
 ex. relative, 100px, solid
 
@@ -43,14 +43,14 @@ ex. relative, 100px, solid
 <link href="css파일경로" rel="stylesheet">
 ```  
 <br>
-이런식으로 외부 파일에서 깔끔하게 정리해서 적용시키는 방식을 주로 하게 된다. (external방식)
+이런식으로 css파일을 하나 따로 만들어서 본 html문서에 link해서 연동시키는 방식을 주로 하게 된다. (external방식)
 
-이렇게 외부로 뺀 css파일은 당연히 확장자도 파일명.css 이고 보통 common.css도 만들어서 진행한다. 
+이렇게 외부로 뺀 css파일은 당연히 확장자도 <em>파일명.css<em> 이고 보통 <em>common.css</em>도 같이 만들어서 진행한다. 
 
 common파일은 영문 그대로 공통적으로 적용할 속성들을 미리 세팅해놓는 용도다.
 
 <div class="blank-space"></div>
-주로 
+주로 common파일에는 
 ```
 * { margin:0; padding:0;}
 
@@ -61,9 +61,11 @@ a:hover {text-decoration: underline;}
 <div class="blank-space"></div>
 등등 다양한 속성들과 그 구체적인 수치를 특정 선택자 혹은 모든 코드에 적용시킬 속성값도 넣어 줄 수 있다
 <br>
-( '*' 일명 Asterisk 는 모든 항목에 적용시킬 수 있는 강력한 녀셕이다) 
+ <em>'*' 일명 Asterisk 는 밑에서 다루겠지만 모든 항목에 적용시킬 수 있는 강력한 녀셕이다</em>
 <br>
-주의할 점은 선택자마다 쓰는 방법이 다르다는 거다. 
+이렇게 따로 뺀 css파일에 작업을 할 때는 
+<br>
+그냥 아무렇게나 쓰는게 아니라 마치 문법처럼 선택자마다 쓰는 방법이 다르다.
 <br>
 <div class="blank-space"></div>
 <span class="highlight-dark">1. 태그 (Tag Selector)</span> 
@@ -80,7 +82,21 @@ color: red;
 
 } 
 ```
-<div class="blank-space"></div>
+<br>
+<strong>주의할 점</strong>은 <br>같은 태그들은 태생적으로 css로 작업이 불가능하다.
+아래 나열된 태그들은 불가능하거나 꼼수를 써서 우회적인 방식으로 효과를 줘야할 수도 있다.
+<br>
+```
+<select>, <option>, <input type="checkbox">, <input type="radio"> 
+-> 운영체제(OS)나 브라우저의 기본 UI 테마를 강제로 따라가버림
+<br>
+<head>, <meta>, <title>, <script>, <style>, <link> <- 화면에 나오지 않아 수정 불가
+<br>
+<iframe>, <video>, <canvas>
+->이 태그들 자체의 껍데기 크기(width, height)나 테두리(border)는 바꿀 수 있으나 
+  저 태그 안쪽 내용은 우리의 CSS로 절대 건드릴 수 없음 외부 세계와 완벽히 단절
+```
+<div class="blank-space"></div> 
 <span class="highlight-dark">2. 클래스 선택자 (Class Selector) ⭐</span> 
 <div class="blank-space"></div>
 
