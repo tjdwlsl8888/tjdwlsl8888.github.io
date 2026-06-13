@@ -199,7 +199,7 @@ div태그를 달고있는 클래스 명이 head인 이 녀석(?)을 선택해서
           <a href="#none">To. Hong Glidong.</a>
         </h1>
     </div>
-    <div class="head">  
+    <div class="head">     <--- 바로 이 부분이다. 아무리 복잡해도 이런 방식으로 콕 짚어낼 수 있다 
         <h3>How are you doing?</h3>
     </div>
 </div> 
