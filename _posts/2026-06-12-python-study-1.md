@@ -25,12 +25,12 @@ toc_sticky: true
 프로그래밍 언어를 공부하다보면 굉장히 친숙한 '딕셔너리(json)' 형태의 구조이다. 
 <br><br>
 여기서, `선택자`란 디자인 속성을 적용할 대상이고   
-<br><br>
+<br>
 `속성`은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
-`<em>ex. width, border, position</em>`
+`ex. width, border, position`
 <br><br>
 `값 (Value)'은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
-`<em>ex. relative, 100px, solid</em>`
+`ex. relative, 100px, solid`
 <br><br>
 보통 css작업을 할 때면 html 본문에 작업할 body태그 뼈대 위에
 <br>
@@ -50,7 +50,7 @@ toc_sticky: true
 <br>
 참고로 인라인(inline) 방식으로 직접 내부 코딩하는 경우 우선순위 1순위로 적용된다. 
 <div class="blank-space"></div>
-이렇게 외부로 뺀 css파일은 당연히 확장자도 `<u><em>파일명.css</em></u>` 이고 보통 `<u><em>common.css</em></u>`도 같이 만들어서 진행한다. 
+이렇게 외부로 뺀 css파일은 당연히 확장자도 <span class="text-underline"><em>파일명.css</em></span> 이고 보통 <span class="text-underline"><em>common.css</em></span> 도 같이 만들어서 진행한다. 
 
 common파일은 영문 그대로 공통적으로 적용할 속성들을 미리 세팅해놓는 용도다.
 
