@@ -23,18 +23,15 @@ toc_sticky: true
 ```
 <div class="blank-space"></div>
 프로그래밍 언어를 공부하다보면 굉장히 친숙한 '딕셔너리(json)' 형태의 구조이다. 
-<br>
-여기서, <strong>선택자</strong>란 디자인 속성을 적용할 대상이고   
-<br>
-<strong>속성</strong>은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
-
-<em>ex. width, border, position</em>
-<br>
-<strong>값</strong> (Value)은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
-
-ex. relative, 100px, solid
-
-<br>
+<br><br>
+여기서, `선택자`란 디자인 속성을 적용할 대상이고   
+<br><br>
+`속성`은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
+`<em>ex. width, border, position</em>`
+<br><br>
+`값 (Value)'은 말 그대로 속성에 구체적으로 들어가는 수치나 비율 상태 등을 말한다.     
+`<em>ex. relative, 100px, solid</em>`
+<br><br>
 보통 css작업을 할 때면 html 본문에 작업할 body태그 뼈대 위에
 <br>
 
@@ -44,7 +41,7 @@ ex. relative, 100px, solid
 <br>
 이런식으로 css파일을 하나 따로 만들어서 본 html문서에 link해서 연동시키는 방식을 주로 하게 된다. (external방식)
 
-이렇게 외부로 뺀 css파일은 당연히 확장자도 <u><em>파일명.css</em></u> 이고 보통 <u><em>common.css</em></u>도 같이 만들어서 진행한다. 
+이렇게 외부로 뺀 css파일은 당연히 확장자도 `<u><em>파일명.css</em></u>` 이고 보통 `<u><em>common.css</em></u>`도 같이 만들어서 진행한다. 
 
 common파일은 영문 그대로 공통적으로 적용할 속성들을 미리 세팅해놓는 용도다.
 
@@ -60,8 +57,8 @@ a:hover {text-decoration: underline;}
 <div class="blank-space"></div>
 등등 다양한 속성들과 그 구체적인 수치를 특정 선택자 혹은 모든 코드에 적용시킬 속성값도 넣어 줄 수 있다
 <br>
-<em>'*' 일명 Asterisk 는 밑에서 다루겠지만 모든 항목에 적용시킬 수 있는 강력한 녀셕이다</em>
-<br>
+<em>`*` 일명 Asterisk 는 밑에서 다루겠지만 모든 항목에 적용시킬 수 있는 강력한 녀셕이다</em>
+<br><br><br>
 이렇게 따로 뺀 css파일에 작업을 할 때는 
 <br>
 그냥 아무렇게나 쓰는게 아니라 마치 문법처럼 선택자마다 쓰는 방법이 다르다.
@@ -69,7 +66,7 @@ a:hover {text-decoration: underline;}
 <div class="blank-space"></div>
 <span class="highlight-dark">1. 태그 (Tag Selector)</span> 
 <br><br>
-작성법: 그냥 순수하게 본인만 입력하면 된다.    ex. p, div, h1, span 등 
+작성법: 그냥 순수하게 본인만 입력하면 된다.    `<em>ex. p, div, h1, span</em>` 등 
 <div class="blank-space"></div>
 예시: 
 
@@ -80,8 +77,9 @@ h1 {
 ```
 <br>
 <strong>주의할 점</strong>은 `<br>` 같은 태그들은 태생적으로 css로 작업이 불가능하다.
-아래 나열된 태그들은 불가능하거나 꼼수를 써서 우회적인 방식으로 효과를 줘야할 수도 있다.
 <br>
+아래 나열된 태그들은 불가능하거나 꼼수를 써서 우회적인 방식으로 효과를 줘야할 수도 있다.
+<br><br>
 ```text
 <select>, <option>, <input type="checkbox">, <input type="radio"> 
 -> 운영체제(OS)나 브라우저의 기본 UI 테마를 강제로 따라가버림
@@ -99,7 +97,7 @@ h1 {
 
 작성법: class를 부여한 태그 다음에 .을 치고 그 클래스명을 입력해서 작업한다. 
 
-보통 html 본문에 있는 태그 안에 class="명칭" 을 부과해서 쉽게 지정할 수 있게 작업한다
+보통 html 본문에 있는 태그 안에 `class="명칭"` 을 부과해서 쉽게 지정할 수 있게 작업한다
 <div class="blank-space"></div>
 
 ```html
@@ -139,12 +137,12 @@ h1 {
 }
 ```
 <div class="blank-space"></div>
-사용법은 간단하다. #만 붙여서 맨 앞자리에 쓰면 끝이다.
+사용법은 간단하다. '#'만 붙여서 맨 앞자리에 쓰면 끝이다.
 
-위의 예시 코드는 뭔가 복잡해보이지만 여기서 중점적으로 봐야할건 #wrap 이 부분과 div.head 이거다. 
-<br>
+위의 예시 코드는 뭔가 복잡해보이지만 여기서 중점적으로 봐야할건 `#wrap` 이 부분과 `div.head` 이거다. 
+<br><br>
 
-#wrap은 당연히
+`#wrap`은 당연히
 ```html
 <div id="wrap"></div>
 ``` 
@@ -152,7 +150,7 @@ h1 {
 <br>
 
 <br>
-div.head 이 부분은 위에서 배운 클래스 선택자를 떠올려보자
+`div.head` 이 부분은 위에서 배운 클래스 선택자를 떠올려보자
 <br>
 마찬가지로 다음과 같은 방식으로 코딩하며
 ```html
