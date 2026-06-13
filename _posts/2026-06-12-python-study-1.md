@@ -24,7 +24,7 @@ toc_sticky: true
 <div class="blank-space"></div>
 프로그래밍 언어를 공부하다보면 굉장히 친숙한 '딕셔너리(json)' 형태의 구조이다. 
 <br><br>
-&emsp;여기서, **선택자**란 디자인 속성을 적용할 대상이고   
+&emsp;여기서, **선택자**란 디자인 속성을 적용할 대상 태그이고   
 <br>
 &emsp;**속성**은 크기, 색상, 여백 등 변경하고 싶은 특질이며   
 &emsp;*ex. width, border, position*
